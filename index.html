@@ -52,6 +52,43 @@
             transition: transform 0.5s ease;
         }
         .logo:hover { transform: scale(1.03); }
+
+        /* === Phần sao vàng lấp lánh mới === */
+        .rating-stars {
+            font-size: clamp(2.8rem, 7vw, 4.5rem); /* to hơn, nổi bật */
+            color: #ffd700; /* vàng gold chuẩn */
+            letter-spacing: 10px; /* khoảng cách giữa sao đẹp */
+            text-shadow: 
+                0 0 12px rgba(255, 215, 0, 0.9),
+                0 0 24px rgba(255, 215, 0, 0.7),
+                0 0 36px rgba(255, 165, 0, 0.5);
+            animation: sparkle 4s ease-in-out infinite alternate;
+            display: inline-block;
+            margin: 15px 0;
+        }
+
+        @keyframes sparkle {
+            0% {
+                text-shadow: 
+                    0 0 12px rgba(255, 215, 0, 0.9),
+                    0 0 24px rgba(255, 215, 0, 0.7),
+                    0 0 36px rgba(255, 165, 0, 0.5);
+            }
+            50% {
+                text-shadow: 
+                    0 0 25px rgba(255, 215, 0, 1),
+                    0 0 45px rgba(255, 215, 0, 0.9),
+                    0 0 60px rgba(255, 165, 0, 0.8);
+            }
+            100% {
+                text-shadow: 
+                    0 0 15px rgba(255, 215, 0, 0.8),
+                    0 0 30px rgba(255, 215, 0, 0.6),
+                    0 0 45px rgba(255, 165, 0, 0.4);
+            }
+        }
+        /* === End sao lấp lánh === */
+
         h2 {
             font-family: 'Playfair Display', serif;
             color: #c62828;
@@ -112,14 +149,14 @@
             font-size: clamp(1.18rem, 3.2vw, 1.32rem);
             max-width: 900px;
             margin: 0 auto 50px;
-            padding: 20px 40px 32px; /* Giảm padding-top để sát lề trên hơn */
+            padding: 20px 40px 32px;
             border-radius: 20px;
             box-shadow: 0 8px 28px rgba(0,0,0,0.05);
             line-height: 1.9;
             background: white;
         }
         .gioi-thieu h2 {
-            margin: 10px 0 20px; /* Giảm margin-top xuống tối thiểu */
+            margin: 10px 0 20px;
         }
         .gioi-thieu blockquote {
             text-align: center;
@@ -245,29 +282,27 @@
             .gioi-thieu blockquote { padding: 16px 20px; font-size: clamp(1.35rem, 4vw, 1.6rem); }
             .cta-container { padding: 20px 24px; }
             footer { padding: 50px 16px; }
+            .rating-stars { letter-spacing: 6px; } /* thu hẹp khoảng cách trên mobile */
         }
     </style>
 </head>
 <body>
-
     <header>
         <img src="https://cdn-images.vtv.vn/thumb_w/1200/66349b6076cb4dee98746cf1/2025/01/08/img-5752-46129831291401190532024.JPG" alt="Nem Nướng Liên Chung đặc sản" class="logo">
         <h1>Nem Nướng Liên Chung</h1>
-        <p>Đặc sản OCOP 4 sao - Xã Liên Chung, huyện Tân Yên, Bắc Giang</p>
+        <p>Đặc sản OCOP 4 sao - xã Liên Chung, huyện Tân Yên, Bắc Giang</p>
+        <p class="rating-stars">★★★★</p>
     </header>
-
     <div class="container">
         <p class="intro">
-            Nem Nướng Liên Chung – món đặc sản truyền thống hơn 100 năm, nổi tiếng với vị giòn ngọt của thịt lợn tươi, thơm bùi thính gạo rang, chan chát lá ổi. Sản phẩm sạch, đạt chuẩn OCOP 4 sao, được ủ chua tự nhiên, an toàn thực phẩm.
+            Nem Nướng Liên Chung – món đặc sản truyền thống hơn 100 năm, nổi tiếng với vị giòn ngọt của thịt lợn tươi, thơm bùi của thính gạo rang, chan chát của lá ổi. Sản phẩm sạch, đạt chuẩn OCOP 4 sao, được ủ chua tự nhiên, an toàn thực phẩm.
         </p>
-
         <div class="gioi-thieu">
             <h2>Giới thiệu</h2>
-            <blockquote>“ Sâm Nam nổi tiếng núi Dành<br>Nem nướng đặc sản nổi danh khắp vùng”</blockquote>
+            <blockquote>“Sâm Nam nổi tiếng núi Dành<br>Nem nướng đặc sản nổi danh khắp vùng”</blockquote>
             <p>Câu ca ấy không biết có từ bao giờ? Nhưng đến nay vẫn in đậm trong tâm trí bao người đã từng một lần về thăm xã Liên Chung, huyện Tân Yên (Bắc Giang) nay là xã Phúc Hòa (Bắc Ninh). Vùng quê nơi đây có 02 món đặc sản ẩm thực truyền thống nổi tiếng: Sâm Nam núi Dành và nem nướng Liên Chung từ thời phong kiến trước năm 1945 của thế kỷ trước đến nay. Nem nướng Liên Chung có mùi thơm đặc trưng của lá ổi, vị giòn, ngọt, ngậy thơm của thịt lợn ủ thính gạo rang lên men. Nem được ăn kèm với lá sung, đinh lăng, lộc vừng hoặc lá nhội. Ai đã một lần thưởng thức thứ món ẩm thực đặc sản truyền thống này, cảm nhận hương vị đặc trưng riêng với chén rượu nồng hiếu khách của người dân nơi đây quyến rũ sẽ níu kéo bạn dùng rằng mãi chẳng muốn về.</p>
             <img src="https://cdn-images.vtv.vn/thumb_w/740/66349b6076cb4dee98746cf1/2025/01/08/img-5759-83424055057394415216484-20212479395974537495848.JPG" alt="Nem nướng Liên Chung cuốn lá ăn kèm đặc trưng" class="product">
         </div>
-
         <h2>Thành phần nguyên liệu</h2>
         <div class="section nguyen-lieu">
             <ul>
@@ -281,7 +316,6 @@
             </div>
             <img src="https://kenh14cdn.com/203336854389633024/2025/1/8/img-5754-23456367281295077257758-1736349527916-17363495280541954002148.jpg" alt="Nem nướng Liên Chung gói lá chuối tươi" class="product">
         </div>
-
         <h2>Hướng dẫn sử dụng</h2>
         <p class="usage-note">
             (Có thể sử dụng nem sau 2-3 ngày kể từ ngày sản xuất đối với mùa hè hoặc 3-4 ngày kể từ ngày sản xuất đối với mùa đông)
@@ -290,34 +324,31 @@
             <div class="cach">
                 <h3>Cách 1 – Nướng nem: Ăn ngon nhất</h3>
                 <ul>
-                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến thịt vàng thơm</li>
-                    <li>Nồi chiên không dầu: 200°C, 20-25 phút, trở đều sau 10 phút</li>
-                    <li>Ăn nóng ngay: cuốn lá sung/ổi/nhội, chấm xì dầu tỏi ớt hoặc tương ớt</li>
+                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến khi thịt vàng thơm</li>
+                    <li>Nồi chiên không dầu: Để nhiệt độ 200°C nướng trong 20-25 phút, trở đều sau mỗi 10 phút</li>
+                    <li>Bỏ lớp lá ở ngoài, để nem ra đĩa, dầm nhỏ, ăn nóng ngay cuốn kèm lá sung/ổi/nhội, chấm xì dầu tỏi ớt hoặc tương ớt đều ngon</li>
                 </ul>
                 <img src="https://kenh14cdn.com/203336854389633024/2025/1/8/img-5755-75291730098197427300305-1736349528810-173634952895936375036.jpg" alt="Nem nướng Liên Chung nướng vàng trên than" class="product">
             </div>
-
             <div class="cach">
                 <h3>Cách 2 – Xào chín</h3>
                 <ul>
                     <li>Cho ít dầu/mỡ lợn vào chảo, đun nóng</li>
-                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, đảo đều lửa vừa đến khi thịt chín, tỏa mùi thơm đặc trưng</li>
+                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, để lửa vừa, đảo đều đến khi thịt chín, tỏa mùi thơm đặc trưng</li>
                     <li>Ăn nóng: thơm ngon, đậm đà, chua nhẹ</li>
                 </ul>
                 <img src="https://cdn-images.vtv.vn/thumb_w/740/66349b6076cb4dee98746cf1/2025/01/08/img-5759-83424055057394415216484-20212479395974537495848.JPG" alt="Nem nướng Liên Chung xào chín thơm ngon" class="product">
             </div>
         </div>
-
         <h2>Cách bảo quản</h2>
         <div class="section bao-quan">
             <ul>
-		        <li>Khi nem chưa đến ngày sử dụng, để nem ở nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</li>
+                <li>Khi nem chưa đến ngày sử dụng, để nem ở nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp.</li>
                 <li>Sau khi nem đã chua, để nem vào ngăn mát tủ lạnh, sử dụng trong 10 ngày trở lại.</li>
                 <li>Nếu để vào ngăn đá bảo quản được khoảng 03 tháng.</li>
             </ul>
         </div>
     </div>
-
     <footer>
         <p>© 2026 Nem Nướng Liên Chung - Đặc sản Tân Yên, Bắc Giang</p>
         <p>Nguyên liệu sạch – Chất lượng OCOP – Đảm bảo vệ sinh an toàn thực phẩm!</p>
@@ -331,6 +362,5 @@
         </div>
         <div class="credit"><i>Dàn trang: Tùng Quân</i></div>
     </footer>
-
 </body>
 </html>
