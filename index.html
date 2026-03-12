@@ -112,16 +112,14 @@
             font-size: clamp(1.18rem, 3.2vw, 1.32rem);
             max-width: 900px;
             margin: 0 auto 50px;
-            padding: 32px 40px;
+            padding: 20px 40px 32px; /* Giảm padding-top để sát lề trên hơn */
             border-radius: 20px;
             box-shadow: 0 8px 28px rgba(0,0,0,0.05);
             line-height: 1.9;
             background: white;
         }
-        .gioi-thieu {
-            font-style: italic;
-            border-left: 5px solid #c62828;
-            border-right: 5px solid #2e8b57;
+        .gioi-thieu h2 {
+            margin: 10px 0 20px; /* Giảm margin-top xuống tối thiểu */
         }
         .gioi-thieu blockquote {
             text-align: center;
@@ -130,8 +128,8 @@
             font-style: italic;
             color: #1e5c2a;
             line-height: 1.4;
-            margin: 32px auto;
-            padding: 24px 32px;
+            margin: 0 auto 24px;
+            padding: 20px 32px;
             max-width: 800px;
             background: rgba(30, 92, 42, 0.05);
             border-radius: 12px;
@@ -140,8 +138,9 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
         .gioi-thieu p {
-            text-align: left;
+            text-align: justify;
             text-indent: 20px;
+            font-size: 1.1rem;
         }
         .no-preservative {
             font-weight: 600;
@@ -241,6 +240,9 @@
             header { padding: 70px 16px 50px; }
             .section { padding: 32px 24px; margin: 35px 0; }
             img.product { max-width: 100%; margin: 35px auto; }
+            .gioi-thieu { padding: 20px 20px 32px; }
+            .gioi-thieu h2 { margin: 10px 0 20px; }
+            .gioi-thieu blockquote { padding: 16px 20px; font-size: clamp(1.35rem, 4vw, 1.6rem); }
             .cta-container { padding: 20px 24px; }
             footer { padding: 50px 16px; }
         }
