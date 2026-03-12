@@ -51,9 +51,7 @@
             border: 6px solid rgba(255,255,255,0.85);
             transition: transform 0.5s ease;
         }
-        .logo:hover {
-            transform: scale(1.03);
-        }
+        .logo:hover { transform: scale(1.03); }
         .hotline {
             background: #c62828;
             color: white;
@@ -75,14 +73,8 @@
             transform: translateY(-3px);
             box-shadow: 0 14px 40px rgba(198,40,40,0.4);
         }
-        .hotline::before {
-            content: "📞";
-            font-size: 2.2rem;
-        }
-        .hotline a {
-            color: white;
-            text-decoration: none;
-        }
+        .hotline::before { content: "📞"; font-size: 2.2rem; }
+        .hotline a { color: white; text-decoration: none; }
         .hotline .separator {
             font-weight: normal;
             opacity: 0.8;
@@ -93,7 +85,7 @@
             color: #c62828;
             text-align: center;
             font-size: clamp(2.2rem, 5vw, 3rem);
-            margin: 70px 0 35px;
+            margin: 70px 0 15px;
             position: relative;
         }
         h2::after {
@@ -102,10 +94,25 @@
             height: 4px;
             background: #2e8b57;
             position: absolute;
-            bottom: -14px;
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 2px;
+        }
+        .usage-note {
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+            color: #1e5c2a;
+            font-size: clamp(1.05rem, 3vw, 1.2rem);
+            margin: 0 auto 35px;
+            max-width: 900px;
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 12px;
+            border: 1px solid rgba(30,92,42,0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            line-height: 1.6;
         }
         .section {
             background: white;
@@ -115,13 +122,8 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.06);
             transition: all 0.4s ease;
         }
-        .section:hover {
-            box-shadow: 0 16px 44px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+        .section:hover { box-shadow: 0 16px 44px rgba(0,0,0,0.1); }
+        ul { list-style: none; padding: 0; }
         ul li {
             font-size: 1.22rem;
             margin: 16px 0;
@@ -148,12 +150,9 @@
             box-shadow: 0 12px 36px rgba(0,0,0,0.12);
             transition: transform 0.5s ease;
         }
-        img.product:hover {
-            transform: scale(1.025);
-        }
-        .intro, .gioi-thieu, .no-preservative {
+        img.product:hover { transform: scale(1.025); }
+        .intro, .gioi-thieu {
             font-size: clamp(1.18rem, 3.2vw, 1.32rem);
-            text-align: center;
             max-width: 900px;
             margin: 0 auto 50px;
             padding: 32px 40px;
@@ -175,10 +174,22 @@
             padding: 0 24px;
             border-left: 6px solid #2e8b57;
         }
+        .gioi-thieu p {
+            text-align: left;
+            text-indent: 20px;
+        }
         .no-preservative {
             font-weight: 600;
             color: #1e5c2a;
             border: 2px dashed #2e8b57;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            padding: 28px 40px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+            line-height: 1.6;
         }
         footer {
             background: linear-gradient(to top, #1e5c2a, #2e8b57);
@@ -188,10 +199,7 @@
             margin-top: 80px;
             box-shadow: 0 -12px 36px rgba(0,0,0,0.18);
         }
-        footer p {
-            margin-bottom: 12px;
-            font-weight: 300;
-        }
+        footer p { margin-bottom: 12px; font-weight: 300; }
         .cta-btn {
             display: inline-block;
             background: #c62828;
@@ -222,6 +230,7 @@
             .hotline { padding: 18px 24px; gap: 12px; flex-direction: column; }
             .section { padding: 32px 24px; margin: 35px 0; }
             img.product { max-width: 100%; margin: 35px auto; }
+            .usage-note { padding: 14px 20px; font-size: clamp(1rem, 3vw, 1.15rem); }
             footer { padding: 50px 16px; }
         }
     </style>
@@ -267,11 +276,12 @@
         </div>
 
         <h2>Hướng dẫn sử dụng</h2>
+        <p class="usage-note">(Có thể sử dụng nem sau 2-3 ngày kể từ ngày sản xuất đối với mùa hè hoặc 3-4 ngày kể từ ngày sản xuất đối với mùa đông)</p>
         <div class="section huong-dan">
             <div class="cach">
                 <h3>Cách 1 – Nướng nem: Ăn ngon nhất</h3>
                 <ul>
-                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến thịt vàng giòn</li>
+                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến thịt vàng thơm</li>
                     <li>Nồi chiên không dầu: 200°C, 20-25 phút, trở đều sau 10 phút</li>
                     <li>Ăn nóng ngay: cuốn lá sung/ổi/nhội, chấm xì dầu tỏi ớt hoặc tương ớt</li>
                 </ul>
@@ -282,7 +292,7 @@
                 <h3>Cách 2 – Xào chín</h3>
                 <ul>
                     <li>Cho ít dầu/mỡ lợn vào chảo, đun nóng</li>
-                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, đảo đều lửa vừa đến khi xém vàng</li>
+                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, đảo đều lửa vừa đến khi thịt chín, tỏa mùi thơm đặc trưng</li>
                     <li>Ăn nóng: thơm ngon, đậm đà, chua nhẹ</li>
                 </ul>
                 <img src="https://cdn-images.vtv.vn/thumb_w/740/66349b6076cb4dee98746cf1/2025/01/08/img-5759-83424055057394415216484-20212479395974537495848.JPG" alt="Nem nướng Liên Chung xào chín thơm ngon" class="product">
@@ -293,7 +303,7 @@
         <div class="section bao-quan">
             <ul>
                 <li>Sau khi nem đã chua, để nem vào ngăn mát tủ lạnh, sử dụng trong 10 ngày trở lại.</li>
-                <li>Nếu để vào ngăn đá bảo quản được 03 tháng.</li>
+                <li>Nếu để vào ngăn đá bảo quản được khoảng 03 tháng.</li>
             </ul>
         </div>
     </div>
