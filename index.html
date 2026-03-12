@@ -52,40 +52,12 @@
             transition: transform 0.5s ease;
         }
         .logo:hover { transform: scale(1.03); }
-        .hotline {
-            background: #c62828;
-            color: white;
-            font-size: clamp(1.4rem, 4vw, 1.75rem);
-            font-weight: 700;
-            padding: 20px 32px;
-            margin: 40px auto;
-            max-width: 640px;
-            border-radius: 60px;
-            box-shadow: 0 8px 28px rgba(198,40,40,0.25);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            transition: all 0.3s ease;
-        }
-        .hotline:hover {
-            background: #b71c1c;
-            transform: translateY(-3px);
-            box-shadow: 0 14px 40px rgba(198,40,40,0.4);
-        }
-        .hotline::before { content: "📞"; font-size: 2.2rem; }
-        .hotline a { color: white; text-decoration: none; }
-        .hotline .separator {
-            font-weight: normal;
-            opacity: 0.8;
-            font-size: 1.5rem;
-        }
         h2 {
             font-family: 'Playfair Display', serif;
             color: #c62828;
             text-align: center;
             font-size: clamp(2.2rem, 5vw, 3rem);
-            margin: 70px 0 15px;
+            margin: 70px 0 35px;
             position: relative;
         }
         h2::after {
@@ -94,25 +66,10 @@
             height: 4px;
             background: #2e8b57;
             position: absolute;
-            bottom: -12px;
+            bottom: -14px;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 2px;
-        }
-        .usage-note {
-            text-align: center;
-            font-style: italic;
-            font-weight: 500;
-            color: #1e5c2a;
-            font-size: clamp(1.05rem, 3vw, 1.2rem);
-            margin: 0 auto 35px;
-            max-width: 900px;
-            padding: 16px 24px;
-            background: rgba(255,255,255,0.9);
-            border-radius: 12px;
-            border: 1px solid rgba(30,92,42,0.15);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            line-height: 1.6;
         }
         .section {
             background: white;
@@ -167,12 +124,20 @@
             border-right: 5px solid #2e8b57;
         }
         .gioi-thieu blockquote {
-            font-size: 1.6rem;
+            text-align: center;
+            font-size: clamp(1.5rem, 3.8vw, 1.8rem);
             font-weight: 700;
+            font-style: italic;
             color: #1e5c2a;
-            margin: 24px 0;
-            padding: 0 24px;
+            line-height: 1.4;
+            margin: 32px auto;
+            padding: 24px 32px;
+            max-width: 800px;
+            background: rgba(30, 92, 42, 0.05);
+            border-radius: 12px;
             border-left: 6px solid #2e8b57;
+            border-right: 6px solid #2e8b57;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
         .gioi-thieu p {
             text-align: left;
@@ -184,11 +149,26 @@
             border: 2px dashed #2e8b57;
             text-align: center;
             max-width: 900px;
-            margin: 0 auto 50px;
-            padding: 28px 40px;
-            border-radius: 20px;
+            margin: 24px auto 0;
+            padding: 20px 32px;
+            border-radius: 16px;
             background: white;
-            box-shadow: 0 8px 28px rgba(0,0,0,0.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            line-height: 1.6;
+        }
+        .usage-note {
+            text-align: center;
+            font-style: italic;
+            font-weight: 500;
+            color: #1e5c2a;
+            font-size: clamp(1.1rem, 3vw, 1.25rem);
+            margin: 0 auto 35px;
+            max-width: 900px;
+            padding: 16px 24px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 12px;
+            border: 1px solid rgba(30,92,42,0.12);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             line-height: 1.6;
         }
         footer {
@@ -199,38 +179,69 @@
             margin-top: 80px;
             box-shadow: 0 -12px 36px rgba(0,0,0,0.18);
         }
-        footer p { margin-bottom: 12px; font-weight: 300; }
+        footer p {
+            margin-bottom: 12px;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+        .cta-container {
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(46,139,87,0.3);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin: 40px auto;
+            max-width: 500px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            backdrop-filter: blur(4px);
+        }
         .cta-btn {
-            display: inline-block;
+            display: block;
             background: #c62828;
             color: white;
-            font-size: clamp(1.45rem, 4vw, 1.75rem);
+            font-size: clamp(1.4rem, 4vw, 1.65rem);
             font-weight: 700;
-            padding: 18px 55px;
-            border-radius: 60px;
+            padding: 16px 40px;
+            border-radius: 50px;
             text-decoration: none;
-            margin-top: 24px;
-            box-shadow: 0 10px 32px rgba(198,40,40,0.35);
-            transition: all 0.4s ease;
+            margin-bottom: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
         }
         .cta-btn:hover {
             background: #b71c1c;
-            transform: translateY(-4px);
-            box-shadow: 0 16px 48px rgba(198,40,40,0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(198,40,40,0.4);
+        }
+        .hotline-footer {
+            font-size: clamp(1.25rem, 3.5vw, 1.45rem);
+            font-weight: 500;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .hotline-footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .hotline-footer a:hover {
+            color: #ffeb3b;
+        }
+        .hotline-footer .separator {
+            margin: 0 10px;
+            opacity: 0.8;
         }
         footer .credit {
-            font-size: 1rem;
-            opacity: 0.85;
+            font-size: 0.95rem;
+            opacity: 0.8;
             margin-top: 20px;
             font-style: italic;
             font-weight: 300;
         }
         @media (max-width: 768px) {
             header { padding: 70px 16px 50px; }
-            .hotline { padding: 18px 24px; gap: 12px; flex-direction: column; }
             .section { padding: 32px 24px; margin: 35px 0; }
             img.product { max-width: 100%; margin: 35px auto; }
-            .usage-note { padding: 14px 20px; font-size: clamp(1rem, 3vw, 1.15rem); }
+            .cta-container { padding: 20px 24px; }
             footer { padding: 50px 16px; }
         }
     </style>
@@ -244,24 +255,15 @@
     </header>
 
     <div class="container">
-        <div class="hotline">
-            <a href="tel:0985213532">0985 213 532</a>
-            <span class="separator">–</span>
-            <a href="tel:0329103424">0329 103 424</a>
-        </div>
-
         <p class="intro">
             Nem Nướng Liên Chung – món đặc sản truyền thống hơn 100 năm, nổi tiếng với vị giòn ngọt của thịt lợn tươi, thơm bùi thính gạo rang, chan chát lá ổi. Sản phẩm sạch, đạt chuẩn OCOP 4 sao, được ủ chua tự nhiên, an toàn thực phẩm.
         </p>
 
         <div class="gioi-thieu">
-            <blockquote>“ Sâm Nam nổi tiếng núi Dành<br>Nem nướng đặc sản nổi danh khắp vùng”.</blockquote>
+            <h2>Giới thiệu</h2>
+            <blockquote>“ Sâm Nam nổi tiếng núi Dành<br>Nem nướng đặc sản nổi danh khắp vùng”</blockquote>
             <p>Câu ca ấy không biết có từ bao giờ? Nhưng đến nay vẫn in đậm trong tâm trí bao người đã từng một lần về thăm xã Liên Chung, huyện Tân Yên (Bắc Giang) nay là xã Phúc Hòa (Bắc Ninh). Vùng quê nơi đây có 02 món đặc sản ẩm thực truyền thống nổi tiếng: Sâm Nam núi Dành và nem nướng Liên Chung từ thời phong kiến trước năm 1945 của thế kỷ trước đến nay. Nem nướng Liên Chung có mùi thơm đặc trưng của lá ổi, vị giòn, ngọt, ngậy thơm của thịt lợn ủ thính gạo rang lên men. Nem được ăn kèm với lá sung, đinh lăng, lộc vừng hoặc lá nhội. Ai đã một lần thưởng thức thứ món ẩm thực đặc sản truyền thống này, cảm nhận hương vị đặc trưng riêng với chén rượu nồng hiếu khách của người dân nơi đây quyến rũ sẽ níu kéo bạn dùng rằng mãi chẳng muốn về.</p>
             <img src="https://cdn-images.vtv.vn/thumb_w/740/66349b6076cb4dee98746cf1/2025/01/08/img-5759-83424055057394415216484-20212479395974537495848.JPG" alt="Nem nướng Liên Chung cuốn lá ăn kèm đặc trưng" class="product">
-        </div>
-
-        <div class="no-preservative">
-            Không sử dụng chất bảo quản – 100% nguyên liệu tự nhiên, an toàn cho sức khỏe gia đình bạn!
         </div>
 
         <h2>Thành phần nguyên liệu</h2>
@@ -269,19 +271,24 @@
             <ul>
                 <li>Thịt lợn tươi ngon 100% (nạc vai pha mỡ, chọn lọc kỹ)</li>
                 <li>Thính gạo tẻ rang giã nhỏ, thơm bùi đặc trưng</li>
-                <li>Gia vị truyền thống: lá ổi bánh tẻ, tỏi, tiêu, muối, đường...</li>
+                <li>Gia vị truyền thống: lá ổi bánh tẻ, muối, mì chính,...</li>
                 <li>Bì lợn thái sợi giòn, ủ chua tự nhiên</li>
             </ul>
+            <div class="no-preservative">
+                Không sử dụng chất bảo quản – 100% nguyên liệu tự nhiên, an toàn cho sức khỏe gia đình bạn!
+            </div>
             <img src="https://kenh14cdn.com/203336854389633024/2025/1/8/img-5754-23456367281295077257758-1736349527916-17363495280541954002148.jpg" alt="Nem nướng Liên Chung gói lá chuối tươi" class="product">
         </div>
 
         <h2>Hướng dẫn sử dụng</h2>
-        <p class="usage-note">(Có thể sử dụng nem sau 2-3 ngày kể từ ngày sản xuất đối với mùa hè hoặc 3-4 ngày kể từ ngày sản xuất đối với mùa đông)</p>
+        <p class="usage-note">
+            (Có thể sử dụng nem sau 2-3 ngày kể từ ngày sản xuất đối với mùa hè hoặc 3-4 ngày kể từ ngày sản xuất đối với mùa đông)
+        </p>
         <div class="section huong-dan">
             <div class="cach">
                 <h3>Cách 1 – Nướng nem: Ăn ngon nhất</h3>
                 <ul>
-                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến thịt vàng thơm</li>
+                    <li>Nướng trên than hoa hoặc bếp ga: 15-20 phút, nướng cháy lá đến thịt vàng giòn</li>
                     <li>Nồi chiên không dầu: 200°C, 20-25 phút, trở đều sau 10 phút</li>
                     <li>Ăn nóng ngay: cuốn lá sung/ổi/nhội, chấm xì dầu tỏi ớt hoặc tương ớt</li>
                 </ul>
@@ -292,7 +299,7 @@
                 <h3>Cách 2 – Xào chín</h3>
                 <ul>
                     <li>Cho ít dầu/mỡ lợn vào chảo, đun nóng</li>
-                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, đảo đều lửa vừa đến khi thịt chín, tỏa mùi thơm đặc trưng</li>
+                    <li>Bóc vỏ nem, cho vào chảo, dầm nhỏ, đảo đều lửa vừa đến khi xém vàng</li>
                     <li>Ăn nóng: thơm ngon, đậm đà, chua nhẹ</li>
                 </ul>
                 <img src="https://cdn-images.vtv.vn/thumb_w/740/66349b6076cb4dee98746cf1/2025/01/08/img-5759-83424055057394415216484-20212479395974537495848.JPG" alt="Nem nướng Liên Chung xào chín thơm ngon" class="product">
@@ -311,8 +318,15 @@
     <footer>
         <p>© 2026 Nem Nướng Liên Chung - Đặc sản Tân Yên, Bắc Giang</p>
         <p>Nguyên liệu sạch – Chất lượng OCOP – Đảm bảo vệ sinh an toàn thực phẩm!</p>
-        <a href="tel:0985213532" class="cta-btn">Gọi ngay để đặt hàng 🔥</a>
-        <div class="credit"><i>Dàn trang: Tùng Quân</i></div>
+        <div class="cta-container">
+            <a href="tel:0985213532" class="cta-btn">Gọi ngay để đặt hàng 🔥</a>
+            <div class="hotline-footer">
+                <a href="tel:0985213532">0985 213 532</a>
+                <span class="separator">–</span>
+                <a href="tel:0329103424">0329 103 424</a>
+            </div>
+        </div>
+        <div class="credit"><i>Dàn trang: Nguyễn Bá Tùng Quân</i></div>
     </footer>
 
 </body>
